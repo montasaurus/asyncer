@@ -8,6 +8,7 @@ from typing import (
     Coroutine,
     Dict,
     Generic,
+    NoReturn,
     Optional,
     TypeVar,
     Union,
@@ -81,6 +82,21 @@ class SoonValue(Generic[T]):
     @property
     def ready(self) -> bool:
         return not isinstance(self._stored_value, PendingType)
+
+
+class UnboundValueException(Exception):
+    pass
+
+
+class UnboundValue:
+    @property
+    def value(self) -> NoReturn:
+        self.raise_error()
+
+    def raise_error(self) -> NoReturn:
+        raise UnboundValueException(
+            "The return value of this task is still unbound. This can happen if the task group suppressed an exception unexpectedly."
+        )
 
 
 class TaskGroup(_TaskGroup):
