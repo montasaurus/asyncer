@@ -2,6 +2,30 @@
 
 ## Latest Changes
 
+## 0.0.15
+
+### Breaking Changes
+
+* ➖ Drop support for Python 3.9. PR [#476](https://github.com/fastapi/asyncer/pull/476) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* 🔨 Update script to generate source examples, migrate from Python 3.9 to Python 3.10. PR [#478](https://github.com/fastapi/asyncer/pull/478) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Remove min-max testing of AnyIO, covered by uv resolution. PR [#477](https://github.com/fastapi/asyncer/pull/477) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump ruff from 0.15.1 to 0.15.2. PR [#475](https://github.com/fastapi/asyncer/pull/475) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.1 to 9.7.2. PR [#474](https://github.com/fastapi/asyncer/pull/474) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.23.1 to 0.23.2. PR [#473](https://github.com/fastapi/asyncer/pull/473) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.0.14
+
+### Internal
+
+* 👷 Run tests with lower bound uv sync, upgrade `pytest` minimum dependency pin. PR [#464](https://github.com/fastapi/asyncer/pull/464) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆ Bump prek from 0.3.2 to 0.3.3. PR [#471](https://github.com/fastapi/asyncer/pull/471) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.23.0 to 0.23.1. PR [#470](https://github.com/fastapi/asyncer/pull/470) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.0 to 0.15.1. PR [#469](https://github.com/fastapi/asyncer/pull/469) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.21.1 to 0.23.0. PR [#468](https://github.com/fastapi/asyncer/pull/468) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
 ## 0.0.13
 
 ### Docs
